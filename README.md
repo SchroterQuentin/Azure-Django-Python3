@@ -46,4 +46,4 @@ In your environment, install your library with pip then
 
 ## Deploy
 
-By default the settings use in deployment is prod.py, you can change that by set DJANGO_SETTINGS_MODULE environment variable to another file
+By default the settings use in deployment is prod.py, you can change that by set DJANGO_SETTINGS_MODULE environment variable to another settings file.
