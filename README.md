@@ -76,6 +76,6 @@ Activate your environment, install your library with pip then
 
 Change the branch from master to custom on this repo to see the README. The main change is the URL of the repo when you create the django project.
 
-    $ django-admin startproject --template=https://github.com/SchroterQuentin/Azure-DjangoTemplate/archive/custom.zip --extension=config myapp .
+    $ django-admin startproject --template=https://github.com/SchroterQuentin/Azure-Django-Python3/archive/custom.zip --extension=config myapp .
 
 And the requirements you must install after create the project
