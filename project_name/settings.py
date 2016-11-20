@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '{{ project_name }}.azurewebsites.net',
-    'localhost'
+    'localhost',
+    '127.0.0.1',
 ]
 
 
