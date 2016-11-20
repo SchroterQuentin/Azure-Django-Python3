@@ -27,7 +27,7 @@ Install django on the virtualenv
 
 Create the project from this template
 
-    (env) $ django-admin startproject --template=https://github.com/SchroterQuentin/Azure-Django-Python3/archive/custom.zip --extension=config myapp .
+    (env) $ django-admin startproject --template=https://github.com/SchroterQuentin/Azure-Django-Python3/archive/custom.zip --extension=config,txt myapp .
 
 Install packet for dev
 
