@@ -79,5 +79,3 @@ Change the branch from master to custom on this repo to see the README. The main
     $ django-admin startproject --template=https://github.com/SchroterQuentin/Azure-DjangoTemplate/archive/custom.zip --extension=config myapp .
 
 And the requirements you must install after create the project
-
-    (env) $ pip install -r requirements.txt
