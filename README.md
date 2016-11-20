@@ -8,30 +8,74 @@ Create directory for this project *myapp*
 
 Create the environment *env*
 
+    $ cd myapp
     $ python -m venv env
 
-On linux 
+On linux if you don't have the packet install it
 
     $ apt-get install python3.4-venv
 
 Activate it
 
-    $ env/Scripts/activate.bat 
-    $ env/Scripts/Activate.ps1
-    $ env/bin/activate
+    $ env/Scripts/activate.bat # cmd
+    $ env/Scripts/Activate.ps1 # powershell
+    $ env/bin/activate         # bash
 
 Install django on the virtualenv
 
-    $ python -m pip install django
+    (env) $ python -m pip install django
 
 Create the project from this template
 
-    $ django-admin startproject --template=https://github.com/SchroterQuentin/Azure-DjangoTemplate/archive/master.zip --extension=config myapp
+    (env) $ django-admin startproject --template=https://github.com/SchroterQuentin/Azure-DjangoTemplate/archive/master.zip --extension=config myapp
 
 Run the migrations and the server
 
-    $ python manage.py migrate
-    $ python manage.py runserver
+    (env) $ python manage.py migrate
+    (env) $ python manage.py runserver
 
 ## How to deploy on Azure
 
+### With git local deployment
+
+Put yourself in the directory where there is the web.config file
+
+    $ git init
+    $ git add .
+    $ git commit -m "first commit"
+
+Add the remote git and push
+
+    $ git remote add azure https://*user*@*appname*.scm.azurewebsites.net:443
+    $ git push azure master
+
+You will now see the stack of deployment after that your site is ready
+
+### With github deployment
+
+Put yourself in the directory where there is the web.config file
+
+    $ git init
+    $ git add .
+    $ git commit -m "first commit"
+    $ git push origin master
+
+If it's the first time wait the necessary time for the server to create the environment and install the requirements.  
+Now your site is ready
+
+
+## Add library
+
+Activate your environment, install your library with pip then
+
+    $ pip freeze > requirements.txt
+
+# Custom template with debug-toolbar and some settings
+
+Change the branch from master to custom on this repo to see the README. The main change is the URL of the repo when you create the django project.
+
+    $ django-admin startproject --template=https://github.com/SchroterQuentin/Azure-DjangoTemplate/archive/custom.zip --extension=config myapp
+
+And the requirements you must install after create the project
+
+    (env) $ pip install -r requirements.txt

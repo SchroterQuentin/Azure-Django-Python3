@@ -25,7 +25,10 @@ SECRET_KEY = '-3vn$7h29pej=vi+x0s(^nojy!*e=wdf2q(%x82s5z*l+d+20_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '{{ project_name }}.azurewebsites.net',
+    'localhost'
+]
 
 
 # Application definition
