@@ -36,6 +36,8 @@ Run the migrations and the server
 
 ## How to deploy on Azure
 
+First add the host/domain names that this Django site can serve to ALLOWED_HOST in the settings file.
+
 ### With git local deployment
 
 Put yourself in the directory where there is the web.config file

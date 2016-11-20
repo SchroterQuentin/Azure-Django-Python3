@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     '{{ project_name }}.azurewebsites.net',
     'localhost',
     '127.0.0.1',
+    '*',
 ]
 
 
