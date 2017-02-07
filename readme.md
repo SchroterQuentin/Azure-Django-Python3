@@ -19,7 +19,7 @@ Activate it
 
     $ env/Scripts/activate.bat # cmd
     $ env/Scripts/Activate.ps1 # powershell
-    $ env/bin/activate         # bash
+    $ source env/bin/activate  # bash
 
 Install django on the virtualenv
 
